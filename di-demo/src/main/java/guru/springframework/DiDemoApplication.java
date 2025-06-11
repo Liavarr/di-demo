@@ -1,5 +1,8 @@
 package guru.springframework;
 
+import guru.springframework.controller.ConstructorInjectedController;
+import guru.springframework.controller.GetterInjectedController;
+import guru.springframework.controller.PropertyInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.*;
@@ -17,7 +20,10 @@ public class DiDemoApplication {
 		MyController controller = (MyController) ctx.getBean("myController");
 		
 		// Ahora llamamos al metodo del objeto bean del context, como vemos no hemos instanciado un objeto controller como tal, lo ha dado el contexto.
-		controller.hello();
+		System.out.println(controller.hello());
+		System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
+		System.out.println(ctx.getBean(GetterInjectedController.class).sayHello());
+		System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
 
 	}
 
