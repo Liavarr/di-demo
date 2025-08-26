@@ -1,7 +1,7 @@
 package guru.springframework.controllers;
 
 import guru.springframework.controller.GetterInjectedController;
-import guru.springframework.services.GreetingServiceImpl;
+import guru.services.GreetingServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 

@@ -1,7 +1,6 @@
 package guru.springframework.controller;
 
-import guru.springframework.services.GreetingService;
-import guru.springframework.services.PrimaryGreetingService;
+import guru.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller // Marca esto como un Spring Bean

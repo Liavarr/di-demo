@@ -8,8 +8,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.*;
 
 import guru.springframework.controller.MyController;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+// Hemos cambiado Services a otra ruta, debajo de guru, tenemos que llamar ahora con Component Scan para que detecte otras rutas:
+@ComponentScan(basePackages = {"guru.services", "guru.springframework"})
 public class DiDemoApplication {
 
 	public static void main(String[] args) {
