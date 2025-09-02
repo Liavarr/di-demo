@@ -3,6 +3,7 @@ package guru.springframework;
 import guru.springframework.controller.ConstructorInjectedController;
 import guru.springframework.controller.GetterInjectedController;
 import guru.springframework.controller.PropertyInjectedController;
+import jakarta.annotation.sql.DataSourceDefinitions;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.*;

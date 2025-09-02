@@ -12,6 +12,7 @@ public class GreetingServiceFactory {
         this.greetingRepository = greetingRepository;
     }
 
+    //Aqui tenemos el constructor que devuelve cada valor dependiendo de lo que le pasemos
     public GreetingService createGreetingService(String lang) {
         switch (lang){
             case "en":
