@@ -1,0 +1,13 @@
+guru:
+  jms:
+    username: JMS Username
+    password: contrasena
+    url: url de prueba
+---
+spring:
+  config:
+    activate:
+      on-profile: de
+guru:
+  jms:
+    username: Usuario por YAML para perfil de aleman

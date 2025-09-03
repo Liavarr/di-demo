@@ -32,6 +32,7 @@ public class PropertyConfig {
     @Value("${guru.dburl}")
     String url;
 
+    //Ahora mismo está cogiendo application.yml
     @Value("${guru.jms.username}")
     String jmsUser;
     @Value("${guru.jms.password}")
