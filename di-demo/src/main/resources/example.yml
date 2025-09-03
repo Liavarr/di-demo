@@ -1,0 +1,29 @@
+# This is a comment
+
+name: Pablo
+
+names:
+  - John
+  - Pablo
+  - Pedro
+
+pound_sign: "#"
+
+book:
+  author: Pablo Sanchez
+  publisher: Casa del terror
+
+truth: yes
+
+false: no
+
+include_new_lines: |
+  biuernbv
+  sergvseg
+  vservs
+
+ignore_new_lines: >
+  sdfgsedfg
+  sdfbv
+  sdgfbbsfdg bgsfd
+  

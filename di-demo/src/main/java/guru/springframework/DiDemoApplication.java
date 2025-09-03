@@ -3,6 +3,8 @@ package guru.springframework;
 import guru.springframework.controller.ConstructorInjectedController;
 import guru.springframework.controller.GetterInjectedController;
 import guru.springframework.controller.PropertyInjectedController;
+import guru.springframework.examplebeans.FakeDataSource;
+import guru.springframework.examplebeans.FakeJmsBroker;
 import jakarta.annotation.sql.DataSourceDefinitions;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -29,6 +31,13 @@ public class DiDemoApplication {
 		System.out.println(ctx.getBean(GetterInjectedController.class).sayHello());
 		System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
 
+
+		// El contexto da la clase ya instanciada usando inyeccion de dependencias con el Bean en PropertyConfig
+		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
+		System.out.println(fakeDataSource.getUser()+" "+fakeDataSource.getPassword()+" "+fakeDataSource.getUrl());
+
+		FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctx.getBean(FakeJmsBroker.class);
+		System.out.println(fakeJmsBroker.getUser() + " " + fakeJmsBroker.getPassword() + " " + fakeJmsBroker.getUrl());
 	}
 
 }
